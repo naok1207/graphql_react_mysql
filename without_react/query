@@ -1,0 +1,10 @@
+CREATE DATABASE db1;
+
+use db1;
+
+CREATE TABLE memos (
+    id int not null auto_increment,
+    title varchar(60) not null,
+    content varchar(255) not null,
+    primary key (id)
+);

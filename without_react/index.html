@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+        .box {
+            height: 50%;
+            width: 100%;
+        }
+        form {
+            display: flex;
+        }
+        .input_box {
+            width: 200px;
+            margin: 10px;
+        }
+        #memo_title, #memo_content {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .submit_box {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form>
+            <div class="input_box">
+                <input type="text" name="title" id="memo_title">
+                <textarea name="content" id="memo_content" cols="30" rows="10"></textarea>
+            </div>
+            <div class="submit_box">
+                <input type="submit" value="作成" onclick="createMemo()">
+            </div>
+        </form>
+    </div>
+    <div class="box">
+
+    </div>
+</body>
+</html>
